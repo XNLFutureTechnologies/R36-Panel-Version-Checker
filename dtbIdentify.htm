@@ -152,9 +152,10 @@
 		<b>Supporting AeolusUX</b><br>
 		If you would like to support AeolusUX for his work on this tool and his custom ArkOS version for the R36, then you can do so via his <a target="_blank" href="https://ko-fi.com/aeolusux">Ko-fi page here</a>.<br><br>
 		<b>Supporting Christian Haitian (the Official ArkOS Developer)</b><br>
-		If you would like to donate to Christian Haitian (the Official ArkOs developer) then you can go to his <a target="_blank" href="https://github.com/christianhaitian/arkos/wiki">GitHub page</a> and there you'll find a paypay donation button when scrolling down.<br><br>
-		<b>Supporting Me (XNL Future Technologies)</b><br>
-		And if you of course would want to support my work, community, content and more, then you might want to check out my <a target="_blank" href="https://www.patreon.com/XNLFutureTechnologies">Patreon Page here</a>. And if you are interested in Electronics projects, 3D printing, DIY etc, you might want to consider subscribing to my <a target="_blank" href="https://www.youtube.com/@XNLFutureTechnologies">YouTube here</a> (which will also help me out greatly in growing the channel and being able to keep making more projects😊)
+		If you would like to donate to Christian Haitian (the Official ArkOs developer) then you can go to his <a target="_blank" href="https://github.com/christianhaitian/arkos/wiki">GitHub page</a> and there you'll find a PayPal donation button when scrolling down.<br><br>
+
+	<h2>ArkOS Downloads</h2>
+	You can download the official ArkOS by Christian Haitian <a href="https://github.com/christianhaitian/arkos/wiki">here</a>, or you can download the Community Maintained version (especially for the R36 etc) by AeolusUX <a href="https://aeolusux.github.io/ArkOS-R3XS/">here</a>
 
 </div>
     </div>
@@ -185,17 +186,17 @@
 
 		// Corresponding messages for each file
 			const fileMessages = {
-				'v0.txt': "Your R36 uses the original R36S Screen.",
-				'v0_2.txt': "Your R36 uses the original R36S Screen.",
-				'v1.txt': "Your R36 uses Panel 1.",
-				'v2.txt': "Your R36 uses Panel 2.",
-				'v3.txt': "Your R36 uses Panel 3.",
-				'v3_2.txt': "Your R36 uses Panel 3.",
-				'v4.txt': "Your R36 uses Panel 4.",
-				'v4_2.txt': "Your R36 uses Panel 4.",
-				'v4_3.txt': "Your R36 uses Panel 4.",
-				'oldv1.txt': "Your R36 uses the original R36S Screen without FN Button.",
-				'oldv1_2.txt': "Your R36 uses the Original R36S Screen without FN Button."
+				'v0.txt': "Your R36 uses the original R36S Screen.<br>It seems like it that your R36 should work with <a href="https://github.com/XNLFutureTechnologies/R36S-R36H-DTB/raw/main/Instand%20Downloads/Original%20Screen.zip">these boot files</a>",
+				'v0_2.txt': "Your R36 uses the original R36S Screen.<br>It seems like it that your R36 should work with <a href="https://github.com/XNLFutureTechnologies/R36S-R36H-DTB/raw/main/Instand%20Downloads/Original%20Screen.zip">these boot files</a>",
+				'v1.txt': "Your R36 uses Panel 1.<br>It seems like it that your R36 should work with <a href="https://github.com/XNLFutureTechnologies/R36S-R36H-DTB/raw/main/Instand%20Downloads/Screen%20V1.zip">these boot files</a>.",
+				'v2.txt': "Your R36 uses Panel 2.<br>It seems like it that your R36 should work with <a href="https://github.com/XNLFutureTechnologies/R36S-R36H-DTB/raw/main/Instand%20Downloads/Screen%20V2.zip">these boot files</a>",
+				'v3.txt': "Your R36 uses Panel 3.<br>It seems like it that your R36 should work with <a href="https://github.com/XNLFutureTechnologies/R36S-R36H-DTB/raw/main/Instand%20Downloads/Screen%20V3.zip">these boot files</a>",
+				'v3_2.txt': "Your R36 uses Panel 3.<br>It seems like it that your R36 should work with <a href="https://github.com/XNLFutureTechnologies/R36S-R36H-DTB/raw/main/Instand%20Downloads/Screen%20V3.zip">these boot files</a>",
+				'v4.txt': "Your R36 uses Panel 4.<br>It seems like it that your R36 should work with <a href="https://github.com/XNLFutureTechnologies/R36S-R36H-DTB/raw/main/Instand%20Downloads/Screen%20V4.zip">these boot files</a>",
+				'v4_2.txt': "Your R36 uses Panel 4.<br>It seems like it that your R36 should work with <a href="https://github.com/XNLFutureTechnologies/R36S-R36H-DTB/raw/main/Instand%20Downloads/Screen%20V4.zip">these boot files</a>",
+				'v4_3.txt': "Your R36 uses Panel 4.<br>It seems like it that your R36 should work with <a href="https://github.com/XNLFutureTechnologies/R36S-R36H-DTB/raw/main/Instand%20Downloads/Screen%20V4.zip">these boot files</a>",
+				'oldv1.txt': "Your R36 uses the original R36S Screen without FN Button.<br>It seems like it that your R36 should work with <a href="https://github.com/XNLFutureTechnologies/R36S-R36H-DTB/raw/main/Instand%20Downloads/Original%20Screen.zip">these boot files</a>",
+				'oldv1_2.txt': "Your R36 uses the Original R36S Screen without FN Button.<br>It seems like it that your R36 should work with <a href="https://github.com/XNLFutureTechnologies/R36S-R36H-DTB/raw/main/Instand%20Downloads/Original%20Screen.zip">these boot files</a>"
 };
 
             for (var i = 0; i < filesToCompare.length; i++) {
@@ -206,7 +207,7 @@
                     return '<h2 class="message">' + fileMessages[filesToCompare[i]] + '</h2>';
                 }
             }
-            return "The uploaded data does not match the content of any pre-existing file.";
+            return "<h2 class="message">Screen Not Recognized!</h2>Your uploaded file is (currently) not being recognized as one of the known DTB files by this tool. You <b>could</b> just try the files one by one if you are certain that you have a real R36 (and not a clone), or you could <b>try<b> to copy your original boot files back to your boot drive/partition (which you should have kept a copy of if you've followed my tutorial on the blog <a href="https://www.teamxnl.com/installing-or-updating-arkos-r36s-r36h/">here</a>). Do however also make sure you've uploaded the correct file.";
         }
 
         function displayResult(result) {
